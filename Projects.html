@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Development</title>
+    <style>
+        /* Apply box-sizing: border-box to all elements for consistent box model */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0f7fa; /* Soft blue background */
+            margin: 0;
+            padding: 0; /* Ensure there's no padding causing the overflow */
+            overflow-x: hidden; /* Prevent horizontal overflow */
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            margin: 20px; /* Add margin to ensure content doesn't touch the screen edges */
+            text-align: center; /* Center align the text */
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px; /* Add space below the heading */
+            font-size: 2rem; /* Increase font size for prominence */
+        }
+
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 700px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .project img {
+            width: 18%;
+            border-radius: 5px;
+        }
+
+        .project-info {
+            width: 75%;
+            padding-left: 20px;
+            text-align: left; /* Align text to the left */
+        }
+
+        h3 {
+            color: #333;
+            margin: 0; /* Remove default margin */
+            animation: colorChange 3s infinite;
+        }
+
+        p {
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            animation: colorChange 3s infinite;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: #0066cc;
+            }
+            50% {
+                color: #3399ff;
+            }
+            100% {
+                color: #0066cc;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="Project11.jpg" alt="Project1">
+                <div class="project-info">
+                    <h3>Email Extractor</h3>
+                    <p>This is a website for extracting emails from text.</p>
+                    <a href="https://github.com/yasir560/Email-extractor" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="emsicon.jpg" alt="Employee Management System">
+                <div class="project-info">
+                    <h3>Employee Management System</h3>
+                    <p>This project keeps the record of employees regarding their salary, personal data, attendance, and much more.</p>
+                    <a href="https://github.com/yasir560/EmployeeManagementSystem" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="SocialApp1.jpg" alt="Social App">
+                <div class="project-info">
+                    <h3>Social App</h3>
+                    <p>With the help of this app, you can navigate to multiple social apps using one app.</p>
+                    <a href="https://github.com/yasir560/Social-App" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
